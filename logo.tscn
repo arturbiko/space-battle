@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://brs4tao1uku4x"]
-
-[ext_resource type="Texture2D" uid="uid://cj4nlxunitpcx" path="res://assets/logo_transparent.png" id="1_8ke8x"]
-
-[node name="Logo" type="Node2D"]
-
-[node name="LogoTransparent" type="Sprite2D" parent="."]
-scale = Vector2(0.170829, 0.170829)
-texture = ExtResource("1_8ke8x")
