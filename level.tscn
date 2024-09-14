@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://codqeo1kxri1m"]
+
+[ext_resource type="PackedScene" uid="uid://dnn16f1voktf8" path="res://player.tscn" id="1_4qkan"]
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_cqpl6"]
+[ext_resource type="PackedScene" uid="uid://bxfl15df46s5y" path="res://highscore.tscn" id="2_wrpck"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_cqpl6")
+
+[node name="Player" parent="." instance=ExtResource("1_4qkan")]
+position = Vector2(408, 555)
+
+[node name="HighScore" parent="." instance=ExtResource("2_wrpck")]
+offset_left = 737.0
+offset_top = 20.0
+offset_right = 770.0
+offset_bottom = 33.0

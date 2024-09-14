@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4altomgio5tg"]
+
+[ext_resource type="Script" path="res://scripts/laser.gd" id="1_8vrr7"]
+[ext_resource type="Texture2D" uid="uid://bj1fdkmduhtww" path="res://assets/attack/pixel_laser_blue.png" id="2_jqssl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxrc2"]
+size = Vector2(3, 4.25)
+
+[node name="Laser" type="Area2D"]
+script = ExtResource("1_8vrr7")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(1.19209e-07, 0)
+scale = Vector2(0.308333, 0.308333)
+texture = ExtResource("2_jqssl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+show_behind_parent = true
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_rxrc2")
+
+[node name="OutOfBounds" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(1.13687e-13, 2.38419e-07)
+scale = Vector2(0.1, 0.1)

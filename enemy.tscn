@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsvce8lcnb763"]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_qr5cl"]
+[ext_resource type="Texture2D" uid="uid://bowkr8bafo8i7" path="res://assets/enemy/pixel_ship3_green.png" id="2_8j52x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8frm8"]
+size = Vector2(32, 23)
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource("1_qr5cl")
+
+[node name="Ship" type="Sprite2D" parent="."]
+texture = ExtResource("2_8j52x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_8frm8")

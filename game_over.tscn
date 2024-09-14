@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://fy7e8o1ajlyc"]
+
+[ext_resource type="FontFile" uid="uid://h7y3x3ofr7aw" path="res://assets/font/PixelifySans-Regular.ttf" id="1_0mufh"]
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_jb2ui"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fh53r"]
+font = ExtResource("1_0mufh")
+font_size = 46
+font_color = Color(0.0235294, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n2vwl"]
+font = ExtResource("1_0mufh")
+font_color = Color(0.824284, 0.837204, 0.761124, 1)
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_jb2ui")
+
+[node name="GameOverLabel" type="Label" parent="."]
+offset_left = 310.0
+offset_top = 92.0
+offset_right = 543.0
+offset_bottom = 148.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_fh53r")
+
+[node name="RestartLabel" type="Label" parent="."]
+offset_left = 348.0
+offset_top = 176.0
+offset_right = 510.0
+offset_bottom = 199.0
+text = "Press R to play again"
+label_settings = SubResource("LabelSettings_n2vwl")
+
+[node name="ExitLabel" type="Label" parent="."]
+offset_left = 357.0
+offset_top = 206.0
+offset_right = 519.0
+offset_bottom = 229.0
+text = "Press M for menu"
+label_settings = SubResource("LabelSettings_n2vwl")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://6338likymrau"]
+
+[ext_resource type="Texture2D" uid="uid://bv7de8bvp75lo" path="res://assets/background/bg0.png" id="1_5chq5"]
+[ext_resource type="Texture2D" uid="uid://064d52v7bwpf" path="res://assets/background/l01.png" id="2_rk1bq"]
+[ext_resource type="Texture2D" uid="uid://s80bys0uq3b2" path="res://assets/background/l02.png" id="3_qihdq"]
+
+[node name="Background" type="Node2D"]
+
+[node name="L0" type="Parallax2D" parent="."]
+repeat_size = Vector2(0, 600)
+autoscroll = Vector2(0, 1)
+
+[node name="Sprite" type="Sprite2D" parent="L0"]
+position = Vector2(400, 300)
+texture = ExtResource("1_5chq5")
+
+[node name="L01" type="Parallax2D" parent="."]
+repeat_size = Vector2(0, 600)
+autoscroll = Vector2(0, 25)
+
+[node name="Sprite" type="Sprite2D" parent="L01"]
+position = Vector2(400, 300)
+texture = ExtResource("2_rk1bq")
+
+[node name="L02" type="Parallax2D" parent="."]
+
+[node name="L02" type="Sprite2D" parent="L02"]
+position = Vector2(400, 300)
+texture = ExtResource("3_qihdq")
