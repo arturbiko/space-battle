@@ -37,7 +37,7 @@ func _process(delta: float) -> void:
 		velocity.x = direction.x * SPEED
 		
 	if Input.is_action_pressed("fire") and cooldown_timer.is_stopped():
-		emit_signal("player_laser_fired")
+		player_laser_fired.emit()
 		
 		cooldown_timer.start()
 
@@ -55,7 +55,7 @@ func _on_laser_hit(area: Area2D) -> void:
 func update_ship() -> void:
 	match self.health:
 		0:
-			emit_signal("player_died")
+			player_died.emit()
 			self.queue_free()
 		1:
 			$Ship.texture = player_low

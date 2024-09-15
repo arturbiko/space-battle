@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://brs4tao1uku4x"]
+[gd_scene load_steps=2 format=3 uid="uid://cw740kopetfip"]
 
-[ext_resource type="Texture2D" uid="uid://cj4nlxunitpcx" path="res://assets/logo_transparent.png" id="1_8ke8x"]
+[ext_resource type="Texture2D" uid="uid://cj4nlxunitpcx" path="res://assets/logo.png" id="1_8ke8x"]
 
 [node name="Logo" type="Node2D"]
 

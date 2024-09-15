@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lh02ai3wyd5h"
-path="res://.godot/imported/logo.webp-006e450efb5def6bd12ae0f326326ec8.ctex"
+uid="uid://btisa674hicq7"
+path="res://.godot/imported/logo_full.svg-9c06630633a036d6db77cf9187eafab4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/logo.webp"
-dest_files=["res://.godot/imported/logo.webp-006e450efb5def6bd12ae0f326326ec8.ctex"]
+source_file="res://assets/logo_full.svg"
+dest_files=["res://.godot/imported/logo_full.svg-9c06630633a036d6db77cf9187eafab4.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

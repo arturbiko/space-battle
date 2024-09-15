@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://codqeo1kxri1m"]
+[gd_scene load_steps=4 format=3 uid="uid://b8mcime0nnlef"]
 
-[ext_resource type="PackedScene" uid="uid://dnn16f1voktf8" path="res://player.tscn" id="1_4qkan"]
+[ext_resource type="PackedScene" uid="uid://ckv7k4di4asxh" path="res://player.tscn" id="1_4qkan"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_cqpl6"]
-[ext_resource type="PackedScene" uid="uid://bxfl15df46s5y" path="res://highscore.tscn" id="2_wrpck"]
+[ext_resource type="PackedScene" path="res://highscore.tscn" id="2_wrpck"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_cqpl6")
